@@ -1,0 +1,14 @@
+{
+"companyName": "KiteLion Games & Co.",
+"productName": "Bats VS Snacks",
+"dataUrl": "WebGL+TryCatch.data.unityweb",
+"asmCodeUrl": "WebGL+TryCatch.asm.code.unityweb",
+"asmMemoryUrl": "WebGL+TryCatch.asm.memory.unityweb",
+"asmFrameworkUrl": "WebGL+TryCatch.asm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"dataUrl": "must-revalidate"}
+}

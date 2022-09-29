@@ -1,0 +1,29 @@
+<!doctype html>
+<meta charset="utf-8">
+<html>
+<body>
+<style type="text/css">
+html,body{
+    margin: 0;
+    overflow: hidden;
+	background: black;
+	color: white;
+    /*White on black is easier on the eyes */
+}
+</style>
+<input id="ToggleAutorun" type="button" value="Toggle Autorun" onclick="ToggleAutorun();" />
+<input id="Step" type="button" value="Step Forward" onclick="Step();" />
+Ticks: <label id="Ticks"> 0 </label>
+Speed: <input id="Speed" type="number" value=5000/>
+<p> Note: a fast autorun speed or clicking too fast </p>
+<p> can bug out D3.</p>
+<!-- Load dependencies-->
+<script type="text/javascript" src="source/jquery.min.js"></script>
+<script type="text/javascript" src="source/d3.v2.js"></script>
+<script type="text/javascript" src="source/Frame.js"></script>
+<script type="text/javascript" src="source/Canvas.js"></script>
+
+<!--Launch Conway's Game of Life -->
+<script type="text/javascript" src="source/Start.js"></script>
+</body>
+</html>

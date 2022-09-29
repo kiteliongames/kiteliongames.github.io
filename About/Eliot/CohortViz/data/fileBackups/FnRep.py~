@@ -1,0 +1,11 @@
+#!/usr/bin/env python3  
+
+
+#replaced string1 with replStr
+import fileinput
+
+string1 = " "
+replStr = ""
+
+for line in fileinput.input("test.txt", inplace=True):
+    print(line.replace(string1, replStr), end='')

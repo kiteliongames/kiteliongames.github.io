@@ -1,0 +1,18 @@
+<!doctype html>
+<title>Cohort Vizualization</title>
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="d3.parcoords.js"></script>
+<script src="underscore-min.js"></script>
+<link rel="stylesheet" type="text/css" href="d3.parcoords.css">
+<style>
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  html, body, #example3 {
+     height: 100%;
+     width: 100%;
+  }
+</style>
+<div id="example3" class="parcoords"</div> <!--style="width:1300px;height:300px"></div>-->
+<script type="text/javascript" src="runscript.js"></script>

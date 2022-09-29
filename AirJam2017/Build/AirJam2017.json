@@ -1,0 +1,10 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "AirJam2017.data.unityweb",
+"asmCodeUrl": "AirJam2017.asm.code.unityweb",
+"asmMemoryUrl": "AirJam2017.asm.memory.unityweb",
+"asmFrameworkUrl": "AirJam2017.asm.framework.unityweb",
+"backgroundUrl": "AirJam2017.jpg",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#FFFFFF"
+}

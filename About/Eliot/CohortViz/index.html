@@ -1,0 +1,125 @@
+<!doctype html>
+<title>Cohort Vizualization</title>
+
+<!--Tons of slickgrid dependencies: -->
+<link rel="stylesheet" href="./supporting_scripts/slick.grid.css" type="text/css"/>
+<link rel="stylesheet" href="./supporting_scripts/jquery-ui-1.8.16.custom.css" type="text/css"/>
+<link rel="stylesheet" href="./supporting_scripts/examples.css" type="text/css"/>
+<link rel="stylesheet" href="./supporting_scripts/slick.pager.css" type="text/css"/>
+<script src="./supporting_scripts/jquery-1.7.min.js"></script>
+<script src="./supporting_scripts/jquery.event.drag-2.0.min.js"></script>
+<script src="./supporting_scripts/slick.core.js"></script>
+<script src="./supporting_scripts/slick.grid.js"></script>
+<script src="./supporting_scripts/slick.pager.js"></script>
+<script src="./supporting_scripts/slick.dataview.js"></script>
+
+<!--normal stuff -->
+<link rel="stylesheet" type="text/css" href="./supporting_scripts/d3.parcoords.css">
+<link rel="stylesheet" type="text/css" href="./supporting_scripts/style.css">
+<style>
+body, html {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-size: 12px;
+}
+#grid, #pager {
+  position: fixed;
+  width: 100%;
+}
+#grid {
+  bottom: 0;
+  height: 30%;
+}
+#pager {
+  bottom: 31%;
+  height: 20px;
+}
+.slick-row:hover {
+  font-weight: bold;
+  color: #069;
+}
+#parcoord2 {
+  position: fixed;
+  right: 0px;
+  width: 50%;
+  top: 35%;
+}
+#parcoord { 
+  position: fixed;
+}
+#bundleDimension {
+  position: fixed;
+  left: 10.5%;
+  top: 50%;
+}
+#lblBundle {
+  position: fixed;
+  left: 5.5%;
+  top: 50%;
+}
+#sltPredicate {
+  position: fixed;
+  left: 25%;
+  top: 50%;
+}
+#lblPredicate {
+  position: fixed;
+  left: 18.5%;
+  top: 50%;
+}
+#btnReset {
+  position: fixed;
+  left: 30%;
+  top: 50%;
+}
+
+#description{
+  position: fixed;
+  left: 5%;
+  top: 45%;
+}
+
+</style>
+
+
+<script src="./supporting_scripts/d3.min.js"></script>
+<script src="./supporting_scripts/d3.parcoords.js"></script>
+<script src="./supporting_scripts/underscore-min.js"></script>
+<script src="./supporting_scripts/sylvester.js"></script>
+<script src="./supporting_scripts/qunit.js"></script>
+<script src="./supporting_scripts/underscore.math.js"></script>
+<script src="./supporting_scripts/divgrid.js"></script>
+<div id="parcoord" class="parcoords" style="width:100%;height:35%"></div>
+<div id="parcoord2" class="parcoords" style="height:35%"></div>
+<div id="bundleDimension"></div>
+<!--<input type="file" id="uploader">
+-->
+<div id="grid"></div>
+<div id="pager"></div>
+<label id="lblBundle">Bundle By:</label>
+<p>
+  <label id="lblPredicate" for="sltPredicate">Brushing Comb:</label>
+  <select id="sltPredicate">
+    <option>AND</option>
+    <option>OR</option>
+  </select>
+  <button id="btnReset">Reset Brushes</button>
+  <label id="description">This is from active students from 2010 - 2014. Please see the README for details concerning how to
+  use this viz.</label>
+</p>
+
+<script id="brushing" type="text/javascript" src="./main/runscript.js"></script>
+
+<!--<style>
+<script src="../supporting_scripts/jquery-1.7.js"></script>
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  html, body, #parcoord {
+     height: 100%;
+     width: 100%;
+  }
+</style>-->
