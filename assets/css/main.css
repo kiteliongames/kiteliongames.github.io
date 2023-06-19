@@ -1946,7 +1946,7 @@
 	@media screen and (max-width: 736px) {
 
 		.gallery {
-			-moz-flex-direction: column;
+			-moz-flex-direction: row;
 			-webkit-flex-direction: column;
 			-ms-flex-direction: column;
 			flex-direction: column;
